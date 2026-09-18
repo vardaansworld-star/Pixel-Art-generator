@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Pixel Art</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <header>
+                <h1>Pixel Art</h1>
+            </header>
+            <div class="panel-section">
+                <label for="grid-size">Canvas Size</label>
+                <select id="grid-size">
+                    <option value="8">8 x 8</option>
+                    <option value="16" selected>16 x 16</option>
+                    <option value="32">32 x 32</option>
+                </select>
+            </div>
+            <div class="panel-section">
+                <label>Tools</label>
+                <div class="tool-group">
+                    <button class="tool-btn active" data-tool="pencil">Pencil</button>
+                    <button class="tool-btn" data-tool="eraser">Eraser</button>
+                    <button class="tool-btn" data-tool="eyedropper">Picker</button>
+                </div>
+            </div>
+            <div class="panel-section">
+                <label>Color</label>
+                <div class="color-picker-container">
+                    <input type="color" id="color-picker" value="#3a5a40">
+                    <span id="hex-value">#3a5a40</span>
+                </div>
+            </div>
+            <div class="panel-section">
+                <label>Palette</label>
+                <div class="palette-grid">
+                    <div class="color-swatch" style="background:#111111;" data-color="#111111"></div>
+                    <div class="color-swatch" style="background:#ffffff;" data-color="#ffffff"></div>
+                    <div class="color-swatch" style="background:#d62828;" data-color="#d62828"></div>
+                    <div class="color-swatch" style="background:#f77f00;" data-color="#f77f00"></div>
+                    <div class="color-swatch" style="background:#fcbf49;" data-color="#fcbf49"></div>
+                    <div class="color-swatch" style="background:#3a5a40;" data-color="#3a5a40"></div>
+                    <div class="color-swatch" style="background:#003049;" data-color="#003049"></div>
+                    <div class="color-swatch" style="background:#4a4e69;" data-color="#4a4e69"></div>
+                </div>
+            </div>
+            <div class="panel-section">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="grid-toggle" checked>
+                    Show Grid
+                </label>
+            </div>
+
+            <div class="panel-section action-buttons">
+                <button id="btn-clear" class="btn-secondary">Clear Canvas</button>
+                <button id="btn-export" class="btn-primary">Download Image</button>
+            </div>
+        </aside>
+        
+        <main class="workspace">
+            <div class="canvas-container">
+                <canvas id="drawing-board"></canvas>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
