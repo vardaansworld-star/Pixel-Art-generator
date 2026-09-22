@@ -31,4 +31,4 @@ No build tools, npm packages, or external frameworks required
 2. Open index.html in any web browser
 3. Start drawing!
 ## OR
-Simply use the global link = 
+Simply use the global link = https://vardaansworld-star.github.io/Pixel-Art-generator/
