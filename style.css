@@ -10,7 +10,7 @@
 }
 
 body{
-    font-family:'Succulent','Permanent Marker', cursive,sans-seif;
+    font-family:'Succulent','Permanent Marker', cursive,sans-serif;
     height:100vh;
     display:flex;
     background-color:#f0f2f5;
@@ -43,7 +43,7 @@ header h1{
     letter-spacing:1px;
 }
 
-.panel-selection{
+.panel-section{
     margin-bottom:24px;
     display:flex;
     flex-direction:column;
@@ -60,8 +60,6 @@ select, button{
     font-size:16px;
     background-color:#3b404d;
     color:#f0f2f5;
-    border:2px solid #1a1c23;
-    padding:8px 12px;
     border:2px solid #1a1c23;
     padding:8px 12px;
     border-radius:4px;
@@ -101,6 +99,7 @@ input[type="color"]{
     -webkit-appearance:none;
     border:none;
     width:36px;
+    height:36px;
     background:none;
     cursor:pointer;
     padding:0;
